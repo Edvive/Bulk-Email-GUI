@@ -1,0 +1,4 @@
+bulkmail==1.0.2
+click==7.1.2
+PySimpleGUI==4.32.1
+python-dotenv==0.15.0
