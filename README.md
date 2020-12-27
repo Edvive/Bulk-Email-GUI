@@ -8,42 +8,42 @@ This program is for sending bulk emails with Gmail by parsing emails , developed
 
 # Table of Content
 
-* Introduction
-* Usage
-  * Installation
-    * Windows
-    * Linux
-  * Sending Emails
-    * Browsing CSV File
-    * Subject and Type
-    * Email Body
-    * Variables
-    * Email Field
-    * Credentials
-    * Logs
-* Miscellaneous
-  * Enabling less secure app access
-  * Creating CSV files
-    * From Google Sheets
-    * From Microsoft Excel
-    * Writing CSV Files
-  * Virtual Environment
-* Developer's guide
-  * Tasks
-    * Intentional Bugs
-    * Limitations
-    * Zero-day vulnerability
-    * Improvements
-  * Extras
-    * Bulkmail
-    * PySimpleGui
-    * Standalone Binary
-* Contact
-  * Submission
-  * Issues and Support Tickets
-  * Edvive
-    * General Contact
-    * Internship Opportunity
+* [Introduction](#introduction)
+* [Usage](#usage)
+  * [Installation](#installation)
+    * [Windows](#windows)
+    * [Linux](#linux)
+  * [Sending Emails](#sending-email)
+    * [Browsing CSV File](#browsing-csv-file)
+    * [Subject and Type](#subject-and-type)
+    * [Email Body](#email-body)
+    * [Variables](#variables)
+    * [Email Field](#email-field)
+    * [Credentials](#credentials)
+    * [Logs](#logs)
+* [Miscellaneous](#miscellaneous)
+  * [Enabling less secure app access](#enabling-less-secure-app-access)
+  * [Creating CSV files](#creating-csv-files)
+    * [From Google Sheets](#from-google-sheets)
+    * [From Microsoft Excel](#using-microsoft-excel)
+    * [By writing](#by-writing)
+  * [Virtual Environment](#virtual-environment)
+* [Developers guide](#developers-guide)
+  * [Tasks](#tasks)
+    * [Intentional Bugs](#intentional-bugs)
+    * [Limitations](#limitations)
+    * [Zero-day vulnerability](#zero-day-vulnerability)
+    * [Improvements](#improvements)
+  * [Reference](#reference)
+    * [Bulkmail](#bulkmail)
+    * [PySimpleGui](#pysimplegui)
+    * [Executable](#executable)
+* [Contact](#contact)
+  * [Submission](#submission)
+  * [Issues and Support Tickets](#issues-and-support-tickets)
+  * [Edvive](#edvive)
+    * [General Contact](#general-contact)
+    * [Internship Opportunity](#internship-opportunity)
 
 
 
@@ -212,7 +212,7 @@ Note: You will receive `Credentials do not match` error if your email/password i
 
 
 
-### Logging
+### Logs
 
 After your emails are sent (or while they are still being sent) you can see `success.log` and `failure.log` files present in the same folder where `BulkMail.exe`/`gui.pyw` is located. They will look like below when opened-
 
