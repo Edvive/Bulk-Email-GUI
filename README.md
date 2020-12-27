@@ -22,7 +22,7 @@ This program is for sending bulk emails with Gmail by parsing emails , developed
     * [Credentials](#credentials)
     * [Logs](#logs)
 * [Miscellaneous](#miscellaneous)
-  * [Enabling less secure app access](#enabling-less-secure-app-access)
+  * [Enabling less secure app access](#less-secure-app-access)
   * [Creating CSV files](#creating-csv-files)
     * [From Google Sheets](#from-google-sheets)
     * [From Microsoft Excel](#using-microsoft-excel)
@@ -210,6 +210,8 @@ Just type in your Gmail address and Password and click send. That's all.
 
 Note: You will receive `Credentials do not match` error if your email/password is incorrect or less secure app access is `disabled`. 
 
+Don't forget to disable the less secure app login again after sending your mails!
+
 
 
 ### Logs
@@ -232,17 +234,90 @@ Session ends at 27/12/2020, 21:03:34
 
 # Miscellaneous
 
-## Enabling Less Secure App Access
+## Less Secure App Access
+
+Turning on
+
+1. Go to [your google account settings for less secure access](https://myaccount.google.com/lesssecureapps).
+2. Click the turn off button.
+
+Turning Off
+
+1. Go to [your google account settings for less secure access](https://myaccount.google.com/lesssecureapps).
+2. Click the turn off button.
 
 ## Creating CSV Files
 
 ### From Google Sheets
 
+1. First of all log in into your Google account and browse [Google sheets](https://docs.google.com/spreadsheets/) website. 
+
+2. Then create or open an already created spreadsheet.
+
+3. On top-left you will find the `File` tab. Click on it and do the following-
+
+   `File > Download > Comma Seperated Values(.csv)`
+
+![csv google](https://i.postimg.cc/nV7Y09xW/example.png)
+
+
+
 ### Using Microsoft Excel
+
+1. Open the `Microsoft Office Excel` document. 
+
+2. On top left, you will find the `File` tab. Do the following-
+
+   `File > Export > Change File Type > Other File Type > CSV`
+
+![Microsoft Excel](https://i.postimg.cc/QMsRdZb8/example.png)
+
+
 
 ### By writing
 
+For this documentation, we will use the following table for example showing purpose-
+
+```
+Name   |Contact|    Email    | ID
+-------|-------|-------------|----
+Mr. X  | 11111 | x@gmail.com | 101
+-------|-------|-------------|----
+Mr. Y  | 22222 | y@yahoo.com | 102
+-------|-------|-------------|----
+Mr. Z  | 33333 | z@gmail.com | 103
+```
+
+Here the column names are- `Name`,`Contact`, `Email` and `ID`.
+So the first line of the CSV file would be - `Name,Contact,Email,ID`
+
+In the next three lines, we will typing out the rows serially, without any extra space. The lines will be- `Mr. X,11111,x@gmail.com,101`, `Mr. Y,22222,y@yahoo.com,102` and `Mr. Z,33333,z@gmail.com,103`.
+
+So the CSV file will look like below-
+
+```
+Name,Contact,Email,ID
+Mr. X,11111,x@gmail.com,101
+Mr. Y,22222,y@yahoo.com,102
+Mr. Z,33333,z@gmail.com,103
+```
+
+Notice there are no `space` used unless it was strictly required to express the full name.
+
+
+
 ## Virtual Environment
+
+To install and Run virtual environment, you need to do the following-
+
+1. Open command prompt and run `pip install virtualenv`
+
+2. Inside the relevant directory (where the `requirements.txt` file is located), run `python -m venv virtualenv`
+
+3. Run `virtualenv\Scripts\activate.bat` in command prompt. If successful, you'll see changes in command prompt.
+4. Run `pip install -r requirements.txt` in `virtual environment` to install necessary modules
+
+<!--
 
 # Developers' Guide
 
@@ -255,6 +330,8 @@ Session ends at 27/12/2020, 21:03:34
 ### Zero-day vulnerability
 
 ### Improvements
+
+-->
 
 ## Reference
 
