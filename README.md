@@ -317,7 +317,7 @@ To install and Run virtual environment, you need to do the following-
 3. Run `virtualenv\Scripts\activate.bat` in command prompt. If successful, you'll see changes in command prompt.
 4. Run `pip install -r requirements.txt` in `virtual environment` to install necessary modules
 
-<!--
+
 
 # Developers' Guide
 
@@ -331,11 +331,15 @@ To install and Run virtual environment, you need to do the following-
 
 ### Improvements
 
--->
+
 
 ## Reference
 
 ### Bulkmail
+
+`Bulkmail` is the module used for sending emails
+
+
 
 ### PySimpleGui
 
