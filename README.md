@@ -2,9 +2,11 @@
 
 
 
-# EDVIVE Bulk Emails
+# Edvive Bulk Emails
 
-This program is for sending bulk emails with Gmail by parsing emails , developed by Edvive's programmers.
+This program is for sending bulk emails with Gmail by parsing emails , developed by Edvive.
+
+
 
 # Table of Content
 
