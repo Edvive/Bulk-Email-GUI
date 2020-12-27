@@ -32,7 +32,7 @@ This program is for sending bulk emails with Gmail by parsing emails , developed
   * [Tasks](#tasks)
     * [Intentional Bugs](#intentional-bugs)
     * [Limitations](#limitations)
-    * [Zero-day vulnerability](#zero-day-vulnerability)
+    * [Zero-day vulnerabilities](#zero-day-vulnerabilities)
     * [Improvements](#improvements)
   * [Reference](#reference)
     * [Bulkmail](#bulkmail)
@@ -323,13 +323,15 @@ To install and Run virtual environment, you need to do the following-
 
 ## Tasks
 
-### Intentional Bugs
+This section will be updated when Edvive launches the campaign related to this application. 
 
-### Limitations
+### Intentional Bugs (To-be)
 
-### Zero-day vulnerability
+### Limitations (To-be)
 
-### Improvements
+### Zero-day vulnerabilities (To-be)
+
+### Improvements (To-be)
 
 
 
@@ -337,22 +339,59 @@ To install and Run virtual environment, you need to do the following-
 
 ### Bulkmail
 
-`Bulkmail` is the module used for sending emails
+`bulkmail` is the module used for sending emails in this project.  
+
+Since the package is under [MIT License](https://choosealicense.com/licenses/mit/) , developers who are going to contribute to `gui.pyw` are permitted to make changes to the `bulkmail` package if necessary. The package files has been included in this repository.
+
+Installation: `pip install bulkmail`
+
+For better understanding about `bulkmail`, check the documentation [here](https://roughweed.github.io/csv-bulk-email/).
 
 
 
 ### PySimpleGui
 
+`PySimpleGui` is a Python GUI package made on top of `Tkinter`. This specific package has been used to make the GUI interface of this application.
+
+Installation: `pip install pysimplegui`
+
+Check the full documentation [here](https://pysimplegui.readthedocs.io/en/latest/).
+
+
+
 ### Executable
+
+To convert the `gui.pyw` into a `standalone executable`, the `pyinstaller` package has been used.
+
+Installation: `pip install pyinstaller`
+
+Check the full documentation [here](https://www.pyinstaller.org/).
 
 # Contact
 
 ## Submission
 
+To submit your improvements, you can always fork the repository, make changes and make pull request anytime.
+
+Submission process for Edvive's programs will be declared later.
+
+
+
 ## Issues and Support Tickets
+
+For any question or development issue about this program, file a ticket [here](https://github.com/Edvive/Bulk-Email-GUI/issues).
+
+
 
 ## Edvive
 
 ### General Contact
 
+* [Official Website](https://edvive.com)
+* [Facebook](https://www.facebook.com/edviveofficial/)
+* [Instagram](https://www.instagram.com/edviveofficial/)
+* [LinkedIn](https://www.linkedin.com/company/edvive/)
+
 ### Internship Opportunity
+
+Visit [here](https://edvive.com/apply/) to know about the latest internship opportunity.
