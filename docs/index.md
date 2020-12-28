@@ -1,5 +1,4 @@
-<header>
- 
+
 # Table of Content
 
 * [Introduction](#introduction)
@@ -32,8 +31,8 @@
   * [Edvive](#edvive)
     * [General Contact](#general-contact)
     * [Internship Opportunity](#internship-opportunity)
-
-</header>
+  
+  
 
 # Introduction
 
