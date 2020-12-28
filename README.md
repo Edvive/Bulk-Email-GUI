@@ -4,6 +4,8 @@
 
 # Edvive Bulk Emails
 
+###### Version 1.0.1
+
 This program is for sending bulk emails with Gmail by parsing emails , developed by Edvive.
 
 
