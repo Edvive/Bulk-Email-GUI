@@ -1,11 +1,5 @@
-remote_theme: pmarsceill/just-the-docs
-logo: "/assets/images/logo.png"
-color_scheme: light
-search_enabled: true
-search:
-  heading_level: 2
-  previews: 6
-  preview_words_before: 5
-  preview_words_after: 5
-  rel_url: true
-  button: false
+title: Edvive BulkMail
+logo: /assets/images/logo.png
+description: A software to send bulk emails using Gmail
+show_downloads: true
+theme: jekyll-theme-minimal
