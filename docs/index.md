@@ -198,7 +198,7 @@ Name of the column that contains the email addresses of the recipients. You'll n
 
 ### Credentials
 
-In the `Email Address` and `Password` column, you have to type in your Gmail address and password (Your data would not be stolen. You might check the [codes](https://github.com/Edvive/Bulk-Email-GUI)). Before doing that, make sure to [enable less secure apps](#enabling-less-secure-app-access) in your Gmail account.
+In the `Email Address` and `Password` column, you have to type in your Gmail address and password (Your data would not be stolen. You might check the [codes](https://github.com/Edvive/Bulk-Email-GUI)). Before doing that, make sure to [enable less secure apps](#less-secure-app-access) in your Gmail account.
 
 Just type in your Gmail address and Password and click send. That's all.
 
