@@ -1,13 +1,3 @@
-![Logo-with-text-for-Git-Hub-Top.png](https://i.postimg.cc/W1x2QZnB/Logo-with-text-for-Git-Hub-Top.png)
-
-
-
-# Edvive Bulk Emails
-
-This program is for sending bulk emails with Gmail by parsing emails , developed by [Edvive](https://edvive.com).
-
-
-
 # Table of Content
 
 * [Introduction](#introduction)
