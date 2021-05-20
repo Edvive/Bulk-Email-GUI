@@ -1,5 +1,5 @@
 import PySimpleGUI as sg
-from bulkmail import TextMail
+from bulkmail_codes import TextMail
 import os
 from csv import reader
 from socket import gaierror
@@ -105,11 +105,13 @@ while True:
                 subject=values["subject"],
             )
             mail.template = values["template"]
-            with open(".env", "w") as env:
-                mailvars = f"""SMTP_HOST='smtp.gmail.com'
-SMTP_PORT='587'
-SENDER_EMAIL='{values['username']}'
-SENDER_PASSWORD='{values['password']}'
+            with open("credentials.json", "w") as env:
+                mailvars = f"""{{
+"SMTP_HOST":"smtp.gmail.com",
+"SMTP_PORT": 587,
+"SENDER_EMAIL": "{values['username']}",
+"SENDER_PASSWORD":"{values['password']}" 
+}}
 """
                 env.write(mailvars)
             mail.add_variables(variables)

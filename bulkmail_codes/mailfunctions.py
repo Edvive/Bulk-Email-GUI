@@ -39,8 +39,6 @@ def sendnovar(
     reader = DictReader(database)
 
     # start
-    session = startsession(credentials)
-    SENDER_EMAIL = credentials.get("SENDER_EMAIL")
 
     # making logfiles
     successlog = open("success.log", "a", encoding="utf-8")
@@ -52,6 +50,8 @@ def sendnovar(
     for row in reader:
         RECEIVER_EMAIL = row[email_field]
         try:
+            session = startsession(credentials)
+            SENDER_EMAIL = credentials.get("SENDER_EMAIL")
             email = MIMEMultipart()
             email["From"] = SENDER_EMAIL
             email["To"] = RECEIVER_EMAIL
@@ -59,6 +59,7 @@ def sendnovar(
             email.attach(MIMEText(body, type))
             session.sendmail(SENDER_EMAIL, RECEIVER_EMAIL, email.as_string())
             successlog.write(f"Email sent to {RECEIVER_EMAIL} at {now()}\n")
+            session.quit()
         except:
             failurelog.write(
                 f"Failed to send email to {RECEIVER_EMAIL}. Time: {now()}\n"
@@ -71,8 +72,6 @@ def sendnovar(
     successlog.close()
     failurelog.close()
     database.close()
-
-    session.quit()
 
 
 def sendvar(
@@ -88,10 +87,6 @@ def sendvar(
     database = open(database, "r", encoding="utf-8")
     reader = DictReader(database)
 
-    # start session
-    session = startsession(credentials)
-    SENDER_EMAIL = credentials.get("SENDER_EMAIL")
-
     # making logfiles
     successlog = open("success.log", "a", encoding="utf-8")
     failurelog = open("failure.log", "a", encoding="utf-8")
@@ -102,6 +97,8 @@ def sendvar(
     for row in reader:
         RECEIVER_EMAIL = row[email_field]
         try:
+            session = startsession(credentials)
+            SENDER_EMAIL = credentials.get("SENDER_EMAIL")
             email = MIMEMultipart()
             email["From"] = SENDER_EMAIL
             email["To"] = RECEIVER_EMAIL
@@ -111,6 +108,7 @@ def sendvar(
             email.attach(MIMEText(body, type))
             session.sendmail(SENDER_EMAIL, RECEIVER_EMAIL, email.as_string())
             successlog.write(f"Email sent to {RECEIVER_EMAIL} at {now()}\n")
+            session.quit()
         except:
             failurelog.write(
                 f"Failed to send email to {RECEIVER_EMAIL}. Time: {now()}\n"
@@ -123,5 +121,3 @@ def sendvar(
     successlog.close()
     failurelog.close()
     database.close()
-
-    session.quit()

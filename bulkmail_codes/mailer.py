@@ -1,7 +1,7 @@
 import os
-from dotenv import load_dotenv
 
 from .mailfunctions import sendnovar, sendvar
+from json import load, loads
 
 
 class TextMail:
@@ -38,13 +38,16 @@ class TextMail:
         self.subject = text
 
     def send(self):
-        load_dotenv()
+        with open('credentials.json','r', encoding='utf-8') as creds:
+            cred = creds.read()
+        cred = loads(cred)
         self.credentials = {
-            "SMTP_HOST": os.environ.get("SMTP_HOST"),
-            "SMTP_PORT": os.environ.get("SMTP_PORT"),
-            "SENDER_EMAIL": os.environ.get("SENDER_EMAIL"),
-            "SENDER_PASSWORD": os.environ.get("SENDER_PASSWORD"),
+            "SMTP_HOST": cred.get("SMTP_HOST"),
+            "SMTP_PORT": cred.get("SMTP_PORT"),
+            "SENDER_EMAIL": cred.get("SENDER_EMAIL"),
+            "SENDER_PASSWORD": cred.get("SENDER_PASSWORD"),
         }
+
         if not bool(self.variables):
             sendnovar(
                 self.database,
