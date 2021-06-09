@@ -11,6 +11,7 @@ from .extras import now, replace_var
 # start new session
 def startsession(credentials):
     # loading credentials
+    print("Starting session")
     SMTP_HOST = credentials.get("SMTP_HOST")
     SMTP_PORT = credentials.get("SMTP_PORT")
     SENDER_EMAIL = credentials.get("SENDER_EMAIL")
